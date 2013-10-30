@@ -7,12 +7,25 @@
 //
 
 #import "AppDelegate.h"
+#import "StuffDoer.h"
 
-@implementation AppDelegate
+@implementation AppDelegate{
+    StuffDoer* obj;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    @autoreleasepool {
+        obj = [[StuffDoer alloc] init];
+        obj.delegate = self;
+        [obj doStuff];
+    }
+}
+
+
+-(void) didStuff:(StuffDoer*)objThatDidTheStuff{
+    obj = nil;
 }
 
 @end

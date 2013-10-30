@@ -18,6 +18,7 @@
 		8BC66CB118206FF100B8AFF2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC66C9018206FF000B8AFF2 /* Cocoa.framework */; };
 		8BC66CB918206FF100B8AFF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BC66CB718206FF100B8AFF2 /* InfoPlist.strings */; };
 		8BC66CBB18206FF100B8AFF2 /* ArcTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC66CBA18206FF100B8AFF2 /* ArcTestTests.m */; };
+		8BC66CC71820702D00B8AFF2 /* StuffDoer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC66CC61820702D00B8AFF2 /* StuffDoer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,9 @@
 		8BC66CB618206FF100B8AFF2 /* ArcTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArcTestTests-Info.plist"; sourceTree = "<group>"; };
 		8BC66CB818206FF100B8AFF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8BC66CBA18206FF100B8AFF2 /* ArcTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArcTestTests.m; sourceTree = "<group>"; };
+		8BC66CC51820702D00B8AFF2 /* StuffDoer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuffDoer.h; sourceTree = "<group>"; };
+		8BC66CC61820702D00B8AFF2 /* StuffDoer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuffDoer.m; sourceTree = "<group>"; };
+		8BC66CC8182070A600B8AFF2 /* StuffDoerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StuffDoerDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		8BC66C9618206FF000B8AFF2 /* ArcTest */ = {
 			isa = PBXGroup;
 			children = (
+				8BC66CC41820700900B8AFF2 /* DeallocTest */,
 				8BC66CA218206FF100B8AFF2 /* AppDelegate.h */,
 				8BC66CA318206FF100B8AFF2 /* AppDelegate.m */,
 				8BC66CA518206FF100B8AFF2 /* MainMenu.xib */,
@@ -152,6 +157,16 @@
 				8BC66CB718206FF100B8AFF2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BC66CC41820700900B8AFF2 /* DeallocTest */ = {
+			isa = PBXGroup;
+			children = (
+				8BC66CC51820702D00B8AFF2 /* StuffDoer.h */,
+				8BC66CC61820702D00B8AFF2 /* StuffDoer.m */,
+				8BC66CC8182070A600B8AFF2 /* StuffDoerDelegate.h */,
+			);
+			name = DeallocTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +269,7 @@
 			files = (
 				8BC66CA418206FF100B8AFF2 /* AppDelegate.m in Sources */,
 				8BC66C9D18206FF100B8AFF2 /* main.m in Sources */,
+				8BC66CC71820702D00B8AFF2 /* StuffDoer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +480,7 @@
 				8BC66CC018206FF100B8AFF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BC66CC118206FF100B8AFF2 /* Build configuration list for PBXNativeTarget "ArcTestTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +489,7 @@
 				8BC66CC318206FF100B8AFF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
